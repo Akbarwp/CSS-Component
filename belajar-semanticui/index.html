@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SemanticUI Maxy</title>
+
+    <link rel="stylesheet" href="semantic.min.css">
+    <script src="semantic.min.js"></script>
+</head>
+
+<body>
+    <!-- Awal Navbar -->
+    <div class="ui menu">
+        <div class="header item">Brand</div>
+        <a class="active item">Link</a>
+        <a class="item">Link</a>
+        <div class="ui dropdown item" tabindex="0">
+            Dropdown
+            <i class="dropdown icon"></i>
+            <div class="menu" tabindex="-1" id="navbar-select">
+                <div class="item">Action</div>
+                <div class="item">Another Action</div>
+                <div class="item">Something else here</div>
+                <div class="divider"></div>
+                <div class="item">Separated Link</div>
+                <div class="divider"></div>
+                <div class="item">One more separated link</div>
+            </div>
+        </div>
+        <div class="right menu">
+            <div class="item">
+                <div class="ui action left icon input">
+                    <i class="search icon"></i>
+                    <input type="text" placeholder="Search">
+                    <button class="ui button">Submit</button>
+                </div>
+            </div>
+            <a class="item">Link</a>
+        </div>
+    </div>
+    <!-- Akhir Navbar -->
+
+
+    <!-- Awal Form -->
+    <div class="ui stackable  container">
+        <form class="ui form">
+            <h1 class="ui dividing header">Contoh Form SemanticUI</h1>
+            <div class="field">
+                <label>Nama</label>
+                <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="shipping[first-name]" placeholder="Nama Depan">
+                    </div>
+                    <div class="field">
+                        <input type="text" name="shipping[last-name]" placeholder="Nama Belakang">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Alamat</label>
+                <div class="field">
+                    <textarea type="text" name="shipping[address]" placeholder="Alamat Lengkap" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Gender</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Gender</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">Laki-laki</div>
+                            <div class="item" data-value="0">Perempuan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Negara</label>
+                    <div class="ui fluid search selection dropdown" id="country-select">
+                        <input type="hidden" name="country">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Pilih Negara</div>
+                        <div class="menu">
+                            <div class="item">Indonesia</div>
+                            <div class="item">Jepang</div>
+                            <div class="item">Amerika</div>
+                            <div class="item">Inggris</div>
+                            <div class="item">Korea Selatan</div>
+                            <div class="item">Australia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grouped fields">
+                <label>Seberapa sering Anda koding?</label>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="example2" id="sering">
+                        <label for="sering">Sering</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="example2" id="kadang">
+                        <label for="kadang">Kadang-kadang</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="example2" id="biasa">
+                        <label for="biasa">Biasa</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui radio checkbox">
+                        <input type="radio" name="example2" id="jarang">
+                        <label for="jarang">Jarang</label>
+                    </div>
+                </div>
+            </div>
+            <div class="two fields ui grid">
+                <div class="field three wide">
+                    <div class="ui toggle checkbox">
+                        <input type="checkbox" name="public" id="subscribe">
+                        <label for="subscribe">Subscribe</label>
+                    </div>
+                </div>
+                <div class="field four wide">
+                    <div class="ui slider checkbox">
+                        <input type="checkbox" name="newsletter" id="accept">
+                        <label for="accept">Accept terms and conditions</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <table class="ui inverted dark selectable celled right aligned table">
+                    <h4 class="ui red text">Tabel Hasil Form</h4>
+                    <thead>
+                        <tr>
+                            <th class="center aligned">Nama</th>
+                            <th class="center aligned">Alamat</th>
+                            <th class="center aligned">Gender</th>
+                            <th class="center aligned">Negara</th>
+                            <th class="center aligned">Koding</th>
+                            <th class="center aligned">Subscribe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center aligned">Ucup</td>
+                            <td class="center aligned">Sidoarjo</td>
+                            <td class="center aligned">L</td>
+                            <td class="center aligned">Indonesia</td>
+                            <td class="center aligned">Sering</td>
+                            <td class="center aligned">Ya</td>
+                        </tr>
+                        <tr>
+                            <td class="center aligned">Wati</td>
+                            <td class="center aligned">Tokyo</td>
+                            <td class="center aligned">P</td>
+                            <td class="center aligned">Jepang</td>
+                            <td class="center aligned">Biasa</td>
+                            <td class="center aligned">Tidak</td>
+                        </tr>
+                        <tr>
+                            <td class="center aligned">Alex</td>
+                            <td class="center aligned">Texas</td>
+                            <td class="center aligned">L</td>
+                            <td class="center aligned">Amerika</td>
+                            <td class="center aligned">Jarang</td>
+                            <td class="center aligned">Ya</td>
+                        </tr>
+                        <tr>
+                            <td class="center aligned">Mawar</td>
+                            <td class="center aligned">Seoul</td>
+                            <td class="center aligned">P</td>
+                            <td class="center aligned">Korea Selatan</td>
+                            <td class="center aligned">Kadang-kadang</td>
+                            <td class="center aligned">Ya</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="ui primary button" tabindex="0">Kirim</div>
+        </form>
+    </div>
+    <!-- Akhir Form -->
+
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        window.onload = function () {
+            $(".ui.selection.dropdown").dropdown();
+        }
+    </script>
+</body>
+
+</html>
